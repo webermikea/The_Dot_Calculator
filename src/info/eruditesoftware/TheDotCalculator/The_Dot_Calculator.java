@@ -1,4 +1,5 @@
 package info.eruditesoftware.TheDotCalculator;
+//test comment
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
 import java.util.Random;
-
 
 public class The_Dot_Calculator extends Activity implements OnClickListener {
 
