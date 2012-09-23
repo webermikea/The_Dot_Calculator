@@ -24,7 +24,7 @@ public class MyCircle {
         this.x = x;
         this.y = y;
         this.startAngle = angle;
-        this.radius = 75;
+        this.radius = 50;
         this.maxTrait = maxTrait;
     } // end public MyCircle()
 

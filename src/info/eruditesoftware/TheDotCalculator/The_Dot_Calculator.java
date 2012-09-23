@@ -19,7 +19,9 @@ public class The_Dot_Calculator extends Activity implements OnClickListener {
     Button dotTrait1, encTrait1, runEnc, dotTrait3, encTrait3;
     ProgressBar[][] traits = new ProgressBar[3][5];
     Random randPos = new Random();
-    public static final int MAX_TRAIT = 10;
+    public static final int MAX_TRAIT = 100;
+    public static final int TRAIT_ATROPHE_VALUE = 5;
+    public static final int TRAIT_INCREMENT_VALUE = 10;
 
     // Startup procedure, links visible elements to Java elements
     @Override
@@ -98,7 +100,7 @@ public class The_Dot_Calculator extends Activity implements OnClickListener {
 
     public String increaseTrait(int circleNum, int trait) {
         int value = traits[circleNum][trait].getProgress();
-        value++;
+        value += TRAIT_INCREMENT_VALUE;
         value %= MAX_TRAIT;
         changeTrait(circleNum, trait, value);
         return "Trait " + trait + " increased.";
@@ -202,26 +204,26 @@ public class The_Dot_Calculator extends Activity implements OnClickListener {
             if (results_1_3) {
                 response = "The Dot wins with soft skills! " + winningTrait + " - " + lowestWinnerValue;
                 // Here we will raise the lowest winning stat by 1
-                changeTrait(1, winningTrait, lowestWinnerValue + 1);
+                changeTrait(1, winningTrait, lowestWinnerValue + TRAIT_INCREMENT_VALUE);
             } else {
                 // Lower the highest stat of 1 and 3
                 if (traits[1][1].getProgress() >= traits[1][3].getProgress()) {
-                    changeTrait(1, 1, traits[1][1].getProgress() - 1);
+                    changeTrait(1, 1, traits[1][1].getProgress() - TRAIT_ATROPHE_VALUE);
                 } else {
-                    changeTrait(1, 3, traits[1][3].getProgress() - 1);
+                    changeTrait(1, 3, traits[1][3].getProgress() - TRAIT_ATROPHE_VALUE);
                 }
             }
         } else {
             if (results_2_4) {
                 response = "The Dot wins with hard skills! " + winningTrait + " - " + lowestWinnerValue;
                 // Here we will raise the lowest winning stat by 1
-                changeTrait(1, winningTrait, lowestWinnerValue + 1);
+                changeTrait(1, winningTrait, lowestWinnerValue + TRAIT_INCREMENT_VALUE);
             } else {
                 // Lower the highest stat of 2 and 4
                 if (traits[1][2].getProgress() >= traits[1][4].getProgress()) {
-                    changeTrait(1, 2, traits[1][2].getProgress() - 1);
+                    changeTrait(1, 2, traits[1][2].getProgress() - TRAIT_ATROPHE_VALUE);
                 } else {
-                    changeTrait(1, 4, traits[1][4].getProgress() - 1);
+                    changeTrait(1, 4, traits[1][4].getProgress() - TRAIT_ATROPHE_VALUE);
                 }
             }
         }

@@ -25,8 +25,9 @@ public class GameArena extends View {
     }
 
     public void setLocation(int circleDot4, int circleEnc4) {
-        circle.setCenterTo((circleDot4 * 35) + 50, yDot);
-        circle2.setCenterTo((circleEnc4 * 35) + 50, yEnc);
+        int maxTrait = The_Dot_Calculator.MAX_TRAIT;
+        circle.setCenterTo((circleDot4 * 350 / maxTrait) + 50, yDot);
+        circle2.setCenterTo((circleEnc4 * 350 / maxTrait) + 50, yEnc);
     }
 
     public void setAngle(int circleDot2, int circleEnc2) {
