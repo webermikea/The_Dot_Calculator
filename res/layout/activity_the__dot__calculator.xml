@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/buttonDotTrait1Inc"
+            style="@style/buttonStyle"
+            android:text="@string/button_randDot"/>
+
+    <Button
+            android:id="@+id/buttonDotTrait3Inc"
+            style="@style/buttonStyle"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/buttonDotTrait1Inc"
+            android:text="@string/button_alphaChange"/>
+
+    <ProgressBar
+            android:id="@+id/barDot1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/barDot1"
+            android:layout_alignParentRight="true"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <ProgressBar
+            android:id="@+id/barDot2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/barDot1"
+            android:layout_below="@+id/barDot1"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <ProgressBar
+            android:id="@+id/barDot3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/barDot1"
+            android:layout_below="@+id/barDot2"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <ProgressBar
+            android:id="@+id/barDot4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/barDot1"
+            android:layout_below="@+id/barDot3"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <Button
+            android:id="@+id/buttonEncTrait1Inc"
+            style="@style/buttonStyle"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/barDot4"
+            android:layout_marginTop="10dip"
+            android:text="@string/button_randEnc"/>
+
+    <Button
+            android:id="@+id/buttonEncTrait3Inc"
+            style="@style/buttonStyle"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/buttonEncTrait1Inc"
+            android:text="@string/button_alphaEnc"/>
+
+    <ProgressBar
+            android:id="@+id/barEnc1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/barDot1"
+            android:layout_alignTop="@+id/buttonEncTrait1Inc"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <ProgressBar
+            android:id="@+id/barEnc2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/barDot1"
+            android:layout_below="@+id/barEnc1"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <ProgressBar
+            android:id="@+id/barEnc3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/barDot1"
+            android:layout_below="@+id/barEnc2"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <ProgressBar
+            android:id="@+id/barEnc4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/barDot1"
+            android:layout_below="@+id/barEnc3"
+            android:minWidth="@dimen/Trait_bar_width"/>
+
+    <Button
+            android:id="@+id/buttonRunEnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonDotTrait1Inc"
+            android:layout_below="@+id/barEnc4"
+            android:layout_marginTop="10dip"
+            android:text="@string/button_runEnc"/>
+
+    <RelativeLayout
+            android:id="@+id/graphicsArea"
+            android:layout_below="@+id/buttonRunEnc"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+    </RelativeLayout>
+
+</RelativeLayout>

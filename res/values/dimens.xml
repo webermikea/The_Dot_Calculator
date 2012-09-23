@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Trait_bar_width">200dip</dimen>
+    <dimen name="right_Margin">10dip</dimen>
+    <dimen name="editTextHeight">100dip</dimen>
+</resources>
