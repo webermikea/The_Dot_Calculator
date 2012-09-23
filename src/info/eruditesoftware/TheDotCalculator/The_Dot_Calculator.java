@@ -1,5 +1,5 @@
 package info.eruditesoftware.TheDotCalculator;
-//test comment
+//test
 
 import android.app.Activity;
 import android.os.Bundle;
