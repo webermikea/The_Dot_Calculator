@@ -19,7 +19,6 @@ public class MyCircle {
     private Paint paintBrushOuter = null;
     private Paint paintBrushInner = null;
 
-
     public MyCircle(int x, int y, int angle, int maxTrait) {
         super();
         this.x = x;
@@ -29,13 +28,11 @@ public class MyCircle {
         this.maxTrait = maxTrait;
     } // end public MyCircle()
 
-
     public void setCenterTo(int x, int y) {
         this.x = x;
         this.y = y;
         setArcLocation();
     } // end public void setCenterTo()
-
 
     public void setArcLocation() {
         int rectLeft = this.x - this.radius * 3 / 4;
@@ -44,7 +41,6 @@ public class MyCircle {
         int rectBottom = this.y + this.radius * 3 / 4;
         rect.set(rectLeft, rectTop, rectRight, rectBottom);
     }
-
 
     public void setColorByTrait(int trait1Value, int trait3Value) {
         int redAmount = trait1Value * MAX_COLOR / maxTrait;
@@ -64,11 +60,9 @@ public class MyCircle {
         Log.i("dot", "MyCircle Set Color");
     } // end public setColorByTrait()
 
-
     public void setArcStartAngle(int trait2Value) {
         this.startAngle = trait2Value * 360 / maxTrait;
     }
-
 
     public void draw(Canvas canvas) {
         canvas.drawCircle(x, y, radius, paintBrushOuter);
