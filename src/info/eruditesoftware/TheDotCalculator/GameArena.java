@@ -10,6 +10,7 @@ public class GameArena extends View {
     private MyCircle circle2 = null;
     int yDot = 150;
     int yEnc = 325;
+    //blah
 
     public GameArena(Context context) {
         super(context);
