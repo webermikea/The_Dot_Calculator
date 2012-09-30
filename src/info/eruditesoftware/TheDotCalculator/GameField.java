@@ -36,6 +36,7 @@ public class GameField {
     //Instance Variables
     // TODO - this is a list, so it uses 'index' to get around; need to either maintain an index list, or some other means of measuring
     // TODO - maybe this should be HashMap of some sort, where I hash on location and player properties
+    // TODO - this may need to be AL<Object> to hold anything else (goals, walls, effects, etc)
     ArrayList<PlayerPosition> _player_positions;
 
 

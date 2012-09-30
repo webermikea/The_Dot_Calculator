@@ -1,6 +1,7 @@
 package info.eruditesoftware.TheDotCalculator;
 
-import android.app.Activity;
+import android.content.Context;
+import android.view.View;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,7 +11,7 @@ import android.app.Activity;
  * <p/>
  * This needs to be an activity because this is what the human player interfaces with
  */
-public class AnimationEngine extends Activity {
+public class AnimationEngine extends View {
     //Constants
 
 
@@ -21,4 +22,9 @@ public class AnimationEngine extends Activity {
 
     //Instance Variables
     //player vector
+
+    public AnimationEngine(Context context) {
+        //View is going to use this constructor because it
+        super(context);
+    }
 }
